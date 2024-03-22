@@ -28,6 +28,9 @@ function Topbar() {
             <Link to={"/products"}className="nav-link" >
               Products 
             </Link>
+            <Link to={"/blog/politics"}className="nav-link" >
+              Blogs 
+            </Link>
             <Link to={"/contact"} className="nav-link " >
               Contact
             </Link>

@@ -6,6 +6,11 @@ import About from "./About";
 import Products from "./Products";
 import Contact from "./Contact";
 import { Routes, BrowserRouter, Route } from "react-router-dom";
+import Blog from "./Blog";
+import Politics from "./Politics";
+import Sports from "./Sports";
+import Fashion from "./Fashion";
+import Business from "./Business";
 function App() {
   return (
     <>
@@ -16,6 +21,12 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/products" element={<Products />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/blog" element={<Blog />}>
+            <Route path="politics" element={<Politics />}></Route>
+            <Route path="sports" element={<Sports />}></Route>
+            <Route path="fashion" element={<Fashion />}></Route>
+            <Route path="business" element={<Business />}></Route>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
